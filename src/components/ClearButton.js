@@ -9,4 +9,4 @@ function ClearButton() {
     )
 }
 
-export default ClearButton
+export default ClearButton;

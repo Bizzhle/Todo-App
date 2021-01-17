@@ -55,7 +55,7 @@ function Todo(props) {
           </div>
         </div>
     </form>
-  )
+  );
   
   const viewTemplate = (
     

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function FilterButton(props) {
     return (
@@ -9,7 +9,7 @@ function FilterButton(props) {
         onClick={() => props.setFilter(props.name)}>
       <span>{props.name}</span>
     </button>
-    )
+    );
 }
 
-export default FilterButton
+export default FilterButton;

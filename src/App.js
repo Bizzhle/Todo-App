@@ -11,17 +11,17 @@ const FILTER_MAP = {
   Completed: task => task.completed
 };
 
-const FILTER_NAMES = Object.keys(FILTER_MAP)
+const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  const [filter, setFilter] = useState('All')
+  const [filter, setFilter] = useState('All');
 
   
 
   function addTask(name) {
     const newTask = {id: "todo-" + nanoid(), name: name, completed: false};
-    setTasks([...tasks, newTask])
+    setTasks([...tasks, newTask]);
   }
 
   function toggleTaskCompleted(id) {
@@ -30,11 +30,11 @@ function App(props) {
       if (id === task.id) {
         // use object spread to make a new object
         // whose `completed` prop has been inverted
-        return {...task, completed: !task.completed}
+        return {...task, completed: !task.completed};
       }
       return task;
     });
-    setTasks(updatedTasks)
+    setTasks(updatedTasks);
   }
 
   function deleteTask(id) {
@@ -46,7 +46,7 @@ function App(props) {
     const editedTaskList = tasks.map(task => {
       // if this task has the same ID as the edited task
       if (id === task.id) {
-        return {...task, name: newName}
+        return {...task, name: newName};
       }
       return task;
     });
@@ -76,7 +76,7 @@ function App(props) {
       isPressed={name === filter} 
       setFilter={setFilter}
       deleteTask={deleteTask} />
-  ))
+  ));
 
  
 

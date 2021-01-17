@@ -20,8 +20,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
     "test": "craco test",
+    "build": "craco build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,6 +46,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.18.0",
     "eslint-plugin-react": "^7.22.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^2.2.1"
   }
 }

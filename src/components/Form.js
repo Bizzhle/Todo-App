@@ -7,13 +7,13 @@ function Form(props) {
     const [name, setName] = useState('');
 
     function handleChange(e) {
-        setName(e.target.value)
+        setName(e.target.value);
     }
 
     function handleSubmit(e) {
         e.preventDefault();
-        props.addTask(name)
-        setName("")
+        props.addTask(name);
+        setName("");
     }
     
     return (
@@ -29,7 +29,7 @@ function Form(props) {
                 <button type="submit" className="bg-white p-2 rounded-r"><IoMdAdd /></button>
             </div>
       </form>
-    )
+    );
 }
 
-export default Form
+export default Form;
